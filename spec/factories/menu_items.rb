@@ -5,5 +5,6 @@ FactoryGirl.define do
     name "Gusteau's"
     description "Exquisite French cuisine"
     price_in_cents 199999
+    category "Seafood"
   end
 end
