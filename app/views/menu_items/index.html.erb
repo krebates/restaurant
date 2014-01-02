@@ -1,0 +1,12 @@
+<h1>HERE IS THE MENU ITEM INDEX PAGE, </h1>
+
+<%= @menu_items.each do |menu_item| %>
+  name: <%= menu_item.name %><br>
+  description: <%= menu_item.description %><br>
+  category : <%= menu_item.category %><br>
+  price: <%= menu_item.price_in_dollars %><br>
+ <%= link_to "Destroy #{menu_item.name}", menu_item, method: :delete, data: { confirm: 'Are you sure?' } %><br>
+ <%= link_to "Edit information Item", edit_menu_item_path(menu_items)%>
+<hr>
+<% end %>
+
